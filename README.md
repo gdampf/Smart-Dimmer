@@ -27,16 +27,19 @@ Weitere Informationen zu ESP-Modulen und deren Programmierung finden Sie hier: h
 	Halbleiter
 	U1, U2  PC817 Optokoppler, DIL
 	U3  ESP-12E oder F
-	D1..D3  S1J Diode 600V/1A
+	D1..D2  S1J Diode 600V/1A
+	D3  1N4007 Diode
 	GL1 Gleichrichter 2A/400V
 	Q1  IRF740
 	ZD1 Zener 10V/400mW SMD MELF (Reichelt SMD ZF 10)
  
 	Widerstände
 	R1  VDR 275VAC, 360VDC, RM 7,5
-	R2, R8  4k7 SMD 0805
+	R2  220k 1/8W
+	R8  4k7 SMD 0805
 	R3, R4, R6, R9  10k SMD 0805
 	R10, R11 100k SMD 1206
+	R12 220k 1/8W
 
 	Kodensatoren
 	C1  220n/275V AC RM22,5 (Entstörkondensator Klasse X2, Reichelt FUNK 220n)
