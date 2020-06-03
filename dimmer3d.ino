@@ -19,8 +19,21 @@
 #define MAGIC_VAL 4711 // to reset settings change to any val 0..9999
 
 #define DEFAULT_TOPIC "MQTT TOPIC,Bsp Wozi/ESP_7EB3_Dimmer"
-#define RESET_SECRET "eset Secret123"
-#define RESET_SECRET_LEN 14
+/*
+ * secret.h definiert zwei MACROS:
+ * SECRET enthält in "" ein Passwort
+ * SECRET_LEN ist die Länge des Passwortes
+ */
+#if __has_include("secret.h")
+  #include "secret.h"
+#endif
+#if defined(SECRET) && defined(SECRET_LEN)
+  #define RESET_SECRET "eset " SECRET
+  #define RESET_SECRET_LEN (5 + SECRET_LEN)
+#else
+  #define RESET_SECRET "eset"
+  #define RESET_SECRET_LEN 4
+#endif
 
 //#define DEBUG1
 //#define DEBUG2
