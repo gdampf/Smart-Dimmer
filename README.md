@@ -1,6 +1,4 @@
-![GitHub Logo](http://www.heise.de/make/icons/make_logo.png)
-
-Guido Dampf basierend (fork) auf einer Veröffentlichung von Make!
+Autor : Guido Dampf basierend (fork) auf einer Veröffentlichung von Make!
 
 Verbessertes Layout ohne Störsignale auf dem Sync, basierend auf ESP-12S (bessere Funktverbindung, weniger Pins) und komplett überarbeiteter Sketch.
 
@@ -12,11 +10,13 @@ Verbessertes Layout ohne Störsignale auf dem Sync, basierend auf ESP-12S (besse
 
 ![Picture](https://github.com/MakeMagazinDE/Smart-Dimmer/blob/master/iot_dimmer_v02.jpg)
 
-Gerber-Files zur Platinenfertigung; Abmessungen der Platine 71 x 71 mm, 2-lagig 1,55mm FR4, Lötstopplack und Bestückungsdruck beidseitig. Eine Leerplatine wird auch im Heise-Shop verfügbar sein.
+Gerber-Files zur Platinenfertigung; Abmessungen der Platine 54 mm Durchmesser, 2-lagig 1,55mm FR4, Lötstopplack und Bestückungsdruck beidseitig.
+
+Die Origina-Leerplatine (auch erhältlich im Heise-Shop) hat bei mir nicht funktioniert, da kein sauberer Sync zu bekommen war.
 
 **Weitere Hinweise**
 
-Bitte beachten Sie das gegenüber der im Heft abgedruckten Version leicht geänderte Schaltbild/Layout. Hinzugekommen sind R10 und R11, die für einen sicheren Start der Schaltung bei nicht angeschlossener Last sorgen.
+Bitte beachten Sie das gegenüber der im Heft abgedruckten Version geänderte Schaltbild/Layout. 
 
 Die Ringkerndrossel L1 wird mit doppelseitigem Schaumstoff-Klebeband auf TR1 befestigt. Zum Anschluss an die Platine können einige Wingungen abgewickelt werden, so dass längere Drahtenden (mit Isolierschlauch schützen) entstehen.
 
