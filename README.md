@@ -55,3 +55,5 @@ Weitere Informationen zu ESP-Modulen und deren Programmierung finden Sie hier: h
 	PL3 Stiftleiste 3pol. RM 2,54
 
 Der veränderte Schaltplan ist als LTSpice XVII Dokument beigelegt, dass so aber nicht simuliert werden kann, da der Trafo für 3,3V nicht vollständig als Modell definiert ist. Zur Simulation kann man ihn aber durch eine 3,3V-Spannungsquelle ersetzen.
+
+Verbessertes layout ohne Störsignale auf dem Sync von GD und komplett überarbeiteter Sketch
