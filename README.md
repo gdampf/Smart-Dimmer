@@ -22,13 +22,12 @@ Für Q1 ist ein kleiner Kühlkörper erforderlich, der leicht aus einem Reststü
 
 Weitere Informationen zu ESP-Modulen und deren Programmierung finden Sie hier: http://stefanfrings.de/esp8266/
 
-### Stückliste
+### Stückliste für modifiziertes Layout
 
 	Halbleiter
-	U1, U2  PC817 Optokoppler, DIL
-	U3  ESP-12E oder F
-	D1..D2  S1J Diode 600V/1A
-	D3  1N4007 Diode
+	U1, U2  PC817 Optokoppler, DIL - U1 wahlweise PC815 (besser)
+	U3  ESP-12S
+	D1..D3  S1J Diode 600V/1A
 	GL1 Gleichrichter 2A/400V
 	Q1  IRF740
 	ZD1 Zener 10V/400mW SMD MELF (Reichelt SMD ZF 10)
@@ -36,24 +35,25 @@ Weitere Informationen zu ESP-Modulen und deren Programmierung finden Sie hier: h
 	Widerstände
 	R1  VDR 275VAC, 360VDC, RM 7,5
 	R2  220k 1/8W
-	R8  4k7 SMD 0805
+	R5, R8  4k7 SMD 0805
 	R3, R4, R6, R9  10k SMD 0805
 	R10, R11 100k SMD 1206
-	R12 220k 1/8W
+	R12 220k SMD 1206
 
 	Kodensatoren
 	C1  220n/275V AC RM22,5 (Entstörkondensator Klasse X2, Reichelt FUNK 220n)
-	C2  47µ/16V Al-Elko SMD 5mm
-	C3  100µ/10V Al-Elko SMD 5mm
+	C2  47µ/25V Elko 
+	C3  100µ/10V Elko
 
 	Sonstiges
 	L1  Ringkerndrossel 100µH/2A
-	FS1 Miniatur-Sicherung 2A flink, ggf. mit Fassung (Reichelt MIK-FLINK 2,0A und PL166600)
+	FS1 Miniatur-Sicherung 2A flink, axial 3*10mm (z.B. bei Aliexpress)
 	TR1 AC/DC-Wandler Meanwell IRM-03 3.3V
 	PL1 Stiftleiste 6pol. RM 2,54
-	PL2 Anschlussklemme 3pol. RM 5,08
+	PL2 Anschlussklemme 3pol. RM 5,08 (am besten gerade, d.h. Schrauben a.d. Seite)
 	PL3 Stiftleiste 3pol. RM 2,54
+	Ext TTP223 als Touch-Sensor
 
 Der veränderte Schaltplan ist als LTSpice XVII Dokument beigelegt, dass so aber nicht simuliert werden kann, da der Trafo für 3,3V nicht vollständig als Modell definiert ist. Zur Simulation kann man ihn aber durch eine 3,3V-Spannungsquelle ersetzen.
 
-Verbessertes layout ohne Störsignale auf dem Sync von GD und komplett überarbeiteter Sketch
+Verbessertes Layout ohne Störsignale auf dem Sync von GD basierend auf ESP-12S (bessere Funktverbindung, weniger Pins) und komplett überarbeiteter Sketch.
