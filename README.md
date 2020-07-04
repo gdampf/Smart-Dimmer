@@ -1,6 +1,8 @@
 ![GitHub Logo](http://www.heise.de/make/icons/make_logo.png)
 
-Maker Media GmbH
+Guido Dampf basierend (fork) auf einer Veröffentlichung von Make!
+
+Verbessertes Layout ohne Störsignale auf dem Sync, basierend auf ESP-12S (bessere Funktverbindung, weniger Pins) und komplett überarbeiteter Sketch.
 
 ***
 
@@ -21,6 +23,8 @@ Die Ringkerndrossel L1 wird mit doppelseitigem Schaumstoff-Klebeband auf TR1 bef
 Für Q1 ist ein kleiner Kühlkörper erforderlich, der leicht aus einem Reststück Aluminium-Winkelprofil angefertigt werden kann. **Beachten Sie, dass der Kühlkörper Netzspannung führt!**
 
 Weitere Informationen zu ESP-Modulen und deren Programmierung finden Sie hier: http://stefanfrings.de/esp8266/
+
+Beiliegend ein modifiziertes Layout - das Original aus dem Heft hat größte Probleme mit Störimpulsen auf dem Sync-Signal, verursacht durch das Schalten der Last. Der Autor hatte ursprünglich ein anderes Layout getestet, bei dem das Sync-Signal vor dem Kondensator abgegriffen wird. An dieses ältere Layout, das nie veröffentlicht wurde (afaik), lehnt sich dieses hier an. Zusätzlich wurde der ESP12F durch einen ESP12S ersetzt, der mit weniger Anschlusspads auskommt, was die Platine etwas vereinfacht.
 
 ### Stückliste für modifiziertes Layout
 
@@ -55,5 +59,3 @@ Weitere Informationen zu ESP-Modulen und deren Programmierung finden Sie hier: h
 	Ext TTP223 als Touch-Sensor
 
 Der veränderte Schaltplan ist als LTSpice XVII Dokument beigelegt, dass so aber nicht simuliert werden kann, da der Trafo für 3,3V nicht vollständig als Modell definiert ist. Zur Simulation kann man ihn aber durch eine 3,3V-Spannungsquelle ersetzen.
-
-Verbessertes Layout ohne Störsignale auf dem Sync von GD basierend auf ESP-12S (bessere Funktverbindung, weniger Pins) und komplett überarbeiteter Sketch.
